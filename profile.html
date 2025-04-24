@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پروفایل داوطلب</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="لوگو" width="50"> مشاوره تحصیلی نوین
+        </div>
+        <nav>
+            <a href="index.html">خانه</a>
+            <a href="#about">درباره ما</a>
+            <a href="#courses">دوره‌ها</a>
+            <a href="#success">موفقیت‌ها</a>
+            <a href="profile.html">پروفایل</a>
+            <a href="#login">ورود/ثبت‌نام</a>
+        </nav>
+    </header>
+    <section class="profile-container">
+        <div class="profile-header">
+            <h1>پروفایل داوطلب: علی محمدی</h1>
+        </div>
+        <div class="profile-info">
+            <p>نوع دوره: مشاوره کنکور تجربی</p>
+            <p>شروع دوره: ۱ مهر ۱۴۰۴</p>
+            <p>پایان دوره: ۳۰ خرداد ۱۴۰۵</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 60%;"></div>
+            </div>
+        </div>
+        <div class="upload-section">
+            <h2>آپلود فایل</h2>
+            <input type="file" id="file-upload">
+            <button onclick="uploadFile()">آپلود</button>
+        </div>
+        <div class="chat-section">
+            <h2>چت با مشاور</h2>
+            <div id="chat-box"></div>
+            <input type="text" id="chat-input" placeholder="پیام خود را بنویسید...">
+            <button onclick="sendMessage()">ارسال</button>
+        </div>
+        <div class="calendar-section">
+            <h2>تقویم رویدادها و آزمون‌ها</h2>
+            <div id="calendar"></div>
+            <input type="text" id="event-title" placeholder="عنوان رویداد">
+            <input type="date" id="event-date">
+            <button onclick="addEvent()">اضافه کردن رویداد</button>
+        </div>
+    </section>
+    <footer>
+        <p>تماس: info@tahsilinovin.ir | © ۱۴۰۴ مشاوره تحصیلی نوین</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
